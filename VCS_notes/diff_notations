@@ -1,0 +1,43 @@
+// Taken from https://www.youtube.com/watch?v=uTy1C60NwhY
+
+Some Version Control Systems use sequences and subsequences to track a file's history between versions.
+
+To track differences between changes, the diff utility uses different notations to tell what changes were made.
+
+
+FORMAT WITH UNKNOWN NAME <- probably made by Stallman...
+
+2c2,3
+< removed_line,
+---
+> added_line,
+> added_line,
+
+CONTEXT FORMAT
+
+*** original_file timestamp
+--- modified_file timestamp
+*************
+***1,4***
+unchanged_line
+-removed_line
+unchanged_line
+unchanged_line
+---1,5---
++added_line
++added_line
+unchanged_line
+unchanged_line
+unchanged_line
+
+UNIFIED FORMAT  <- Most common nowadays
+
+--- original_file timestamp
++++ modified_file timestamp
+@@ -1,4 +1,5 @@
++added_line
++added_line
+unchanged_line
+-removed_line
+unchanged_line
+unchanged_line

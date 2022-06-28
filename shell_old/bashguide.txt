@@ -1,0 +1,11 @@
+; semicolon
+	run a command ; then run this command
+	similar to newline
+&& and and
+	run a command && if the previous command succeded, exec this one
+
+|| pipe pipe
+	run a command || if the first failed, exec this one
+
+&
+	run a command & run this command at the same time of the first one
